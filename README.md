@@ -1,2 +1,2 @@
-# PolyhedralComb-Py
+# PyPolyhedralComb
 Functions for polyhedral combinatorics in Python
