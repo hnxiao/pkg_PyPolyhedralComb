@@ -194,3 +194,12 @@ def fractional_kernel_polytope(d):
     p = lp.polyhedron()
     return p
 """
+
+def semi_complete_digraph(n):
+# Generate a random semicomplete digraph on n vertices
+    d=digraphs.RandomTournament(n)
+    S=Subsets(range(n),2)
+    PS=Subsets(S).random_element()
+    for e in PS:
+        d.add_edge(e)
+    return d
